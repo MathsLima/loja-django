@@ -5,11 +5,11 @@ Sistema de E-comerce com Python e Django
 
 #### criação do ambiente virtual
 ```
-cria o ambiente virtual: python -m venv .venv
+cria o ambiente virtual: python -m venv env
 
 altera a privacidade do código: Set-Executionpolicy -Scope Process -ExecutionPolicy ByPass
 
-ativa o ambiente virtual: .\.venv\Scripts\activate
+ativa o ambiente virtual: .\env\Scripts\activate
 
 cria a estrutura básica do projeto: django-admin startproject setup .
 
@@ -23,12 +23,22 @@ cria o projeto: django-admin startproject loja
 inicia a aplicaçao: python manage.py startapp main 
 ```
 
-#### cria o migrate
+#### migrate
 ```
+python manage.py makemigrations
 python manage.py migrate
 ```
 
 #### cria o admin 
 ```
 py manage.py createsuperuser
+```
+
+## Etapas
+```
+1 - inserir a main em setup>setting>installed-apps e fazer as migrações pelo terminal
+2 - criação das classes category, cor, tamanho, size em main>models 
+3 - criação da classe product utilizando as calsses acima em main>models 
+4 - registro das classes em admin.py
+5 - fazer makemigrations e migrate após cria e registrar as classes 
 ```
