@@ -1,6 +1,10 @@
 # loja-django
 Sistema de E-comerce com Python e Django
 
+### Arquitetura do Django
+ - Model: mapeamento do banco de dados do projeto
+ - Template: página de visualização dos dados, onde fica o HTML que será renderizado no navegador
+ - View: recebe uma requisição web e retorna uma resposta web
 
 
 #### criação do ambiente virtual
